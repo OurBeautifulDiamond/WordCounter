@@ -25,9 +25,6 @@
       padding-top: 0;
       padding-bottom: 0;
     }
-    .nav-link:hover {
-      color: whitesmoke;
-    }
 
     #text-box {
       padding-top: 50px;
@@ -37,19 +34,20 @@
     .text-input {
       width: 100%;
       min-height: 450px;
-      /* padding-left: 0; */
       resize: none;
       padding: 10px 10px 10px 10px;
     }
-
-    .section-3 {
+ 
+    /* .section-3 {
       background-color: #f8f9fa;
-    }
+    } */
     
     .section-4 {
       background-color: #f8f9fa;
     }
   </style>
+  <!-- <script src="js/main.js" defer></script> -->
+
 </head>
 
 <body>
@@ -73,22 +71,22 @@
   <div class="container"></div>
 
   <div class="container section-1" id="text-box">
-    <form action="" class="text-input">
-      <textarea class="text-input" placeholder="글자수 계산을 위해 여기에 내용을 붙여넣거나 글을 작성해주세요."></textarea>
+    <form>
+      <textarea id="textForm" class="text-input" onclick="counter()" onkeydown="counter()" placeholder="글자 수 계산을 위해 여기에 글을 작성하거나 내용을 복사하여 붙여 넣으세요." maxlength="500000"></textarea>
     </form>
   </div>
 
   <div class="container section-2">
     <div>
-      <strong>글자: </strong>
-      <span class="word-count">0</span>
+      <strong>글자 수 : </strong>
+      <span id="word-count">0 (characters)</span>
     </div>
     <div>
-      <strong>단어: </strong>
-      <span class="letter-count">0</span>
+      <strong>단어 수 : </strong>
+      <span class="letter-count">0 (words)</span>
     </div>
     <div>
-      <strong>공백: </strong>
+      <strong>공백 : </strong>
       <span class="space-count">0</span>
     </div>
     <hr>
@@ -194,16 +192,16 @@
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
   <!-- <form>
-        <textarea onclick="counter()" onkeydown="counter()" name="" id="textForm" cols="30" rows="10" placeholder="여기에 글을 넣으면 계산이 시작됩니다." maxlength="500000"></textarea>
-        <span id="count">(0/200)</span>
-    </form>
-    <script>
-        function counter() {
-            let content = document.getElementById('textForm').value;
-            document.getElementById('count').innerHTML = `(${content.length}/200)`;
-        };
-        counter();
-    </script> -->
+    <textarea onclick="counter()" onkeydown="counter()" name="" id="textForm" cols="30" rows="10" placeholder="여기에 글을 넣으면 계산이 시작됩니다." maxlength="500000"></textarea>
+    <span id="count">(0/200)</span>
+  </form> -->
+  <script>
+    function counter() {
+      let content = document.getElementById('textForm').value;
+      document.getElementById('word-count').innerHTML = `${content.length} (characters)`;
+    };
+    counter();
+  </script>
 </body>
 
 </html>
