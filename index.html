@@ -10,7 +10,7 @@
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <style>
     .header {
-      background-color: #712cf9;;
+      background-color: #712cf9;
       color: white;
       height: 50px;
       box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%), inset 0 -1px 0 rgb(0 0 0 / 15%);
@@ -39,6 +39,12 @@
       resize: none;
       padding: 10px 10px 10px 10px;
     }
+    textarea {
+      outline-color: #712cf9;
+    }
+
+
+
     .section-2 {
       padding-top: 15px;
       padding-bottom: 15px;
@@ -82,7 +88,7 @@
 
   <div class="container section-1" id="text-box">
     <form>
-      <textarea id="textForm" class="text-input" onclick="counter()" onkeydown="counter()" placeholder="글자 수 계산을 위해 여기에 글을 작성하거나 내용을 복사하여 붙여 넣으세요." maxlength="500000"></textarea>
+      <textarea id="textForm" class="text-input" onclick="counter()" onkeyup="counter()" placeholder="글자 수 계산을 위해 여기에 글을 작성하거나 내용을 복사하여 붙여 넣으세요." maxlength="500000"></textarea>
     </form>
   </div>
 
@@ -209,9 +215,24 @@
   <script>
     function counter() {
       let content = document.getElementById('textForm').value;
-      document.getElementById('word-count').innerHTML = `${content.length} (characters)`;
+      document.getElementById('word-count').textContent = `${content.length} (characters)`;
     };
     counter();
+
+
+
+    const textInput = document.querySelector(".text-input");
+    const letterCountElement = document.querySelector(".letter-count");
+    const spaceCountElement = document.querySelector(".space-count");
+
+    textInput.addEventListener("input", () => {
+      const splitted = textInput.value.trim().split(/[\s-]/);
+      const letterCount = (textInput.value.match(/[a-z]/gi) || []).length;
+      const spaceCount = (textInput.value.match(/\s+/g) || []).length;
+
+      letterCountElement.textContent = letterCount;
+      spaceCountElement.textContent = spaceCount;
+}); 
   </script>
 </body>
 
