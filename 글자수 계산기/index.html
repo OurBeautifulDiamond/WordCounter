@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0">
+  <title>글자수 계산기</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="icon" href="img/brand.ico">
+</head>
+
+<body>
+  <div class="header sticky-top">
+    <div class="container">
+        <div class="container-fluid navbar justify-content-center" id="navBarLayout">
+          <a class="navbar-brand" href="#">
+            <img src="img/brand.ico" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            글자수 계산기
+          </a>
+          <!-- <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">글자수 계산기</a>
+          </li> -->
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li> -->
+        </div>
+    </div>
+  </div>
+
+  <div class="Ad-1-section"></div>
+
+  <div class="container">
+    <div class="section-1" id="text-box">
+      <form>
+        <textarea class="text-input" placeholder="이곳에 글을 작성하거나 내용을 붙여 넣어보세요. 그러면 바로 글자 수 계산이 시작됩니다.   :-)" maxlength="5000000"></textarea>
+      </form>
+    </div>
+  
+    <div class="section-2">
+      <span>
+        <p class="result-layout">
+          <span>글자 수</span>
+          <span>:</span>
+          <span class="word-count">0</span>
+          <span>자</span>
+          <span>(characters)</span>
+          <span class="badge rounded-pill text-bg-primary">공백 포함</span>
+        </p>
+      </span>
+      <span>
+        <p class="result-layout">
+          <span>글자 수</span>
+          <span>:</span>
+          <span class="word-count-exclude-space">0</span>
+          <span>자</span>
+          <span>(characters)</span>
+          <span class="badge rounded-pill text-bg-danger">공백 제외</span>
+        </p>  
+      </span>
+      <p class="result-layout">
+        <span>단어 수</span>
+        <span>:</span>
+        <span class="letter-count">0</span>
+        <span>개</span>
+        <span>(words)</span>
+      </p>
+      <p class="result-layout">
+        <span>공백</span>
+        <span>:</span>
+        <span class="space-count">0</span>
+        <span>개</span>
+        <span>(spaces)</span>
+      </p>
+    </div>
+    
+    <div class="광고 구분선 삭제 예정"><hr></div>
+  
+    <div class="Ad-2-section">
+      <div><p>Ad</p></div>
+      <hr>
+    </div>
+  
+    <div class="section-3">
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              글을 쓰는게 어려울 때
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+              <code>.accordion-flush</code> class. This is the first item's accordion body.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              글의 목적 찾기
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+              <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being
+              filled with some actual content.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              글을 다듬는 법
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+              <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
+              happening here in terms of content, but just filling up the space to make it look, at least at first glance,
+              a bit more representative of how this would look in a real-world application.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <hr>
+
+    <div class="section-4">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At magni quisquam ipsum assumenda deleniti doloribus
+        dolore distinctio possimus repudiandae nam non, reprehenderit beatae voluptatum accusantium praesentium ipsa
+        officiis. Doloribus officia illo assumenda molestiae excepturi modi voluptatum cumque, sunt expedita omnis enim
+        autem dicta? Accusantium quo sed, voluptatum nesciunt ipsum quis, reiciendis pariatur dignissimos eaque atque
+        ullam, ipsa saepe vero debitis laboriosam ipsam voluptate? Vero repellat quo, animi officia neque blanditiis
+        dolore non reiciendis aspernatur corrupti? Nam provident aspernatur nesciunt ad explicabo cumque id excepturi est
+        perferendis officia voluptatibus nisi eos nemo dolorem, error suscipit exercitationem soluta enim, quaerat minima
+        doloremque accusamus atque sequi? Id cumque, quos nobis officia exercitationem mollitia pariatur libero dolorem
+        magnam voluptates illum autem esse suscipit. Impedit amet consequuntur temporibus dolor cumque doloremque at
+        voluptas sapiente dolores rerum fugiat hic et quod praesentium voluptate ullam excepturi necessitatibus sint vel
+        illum numquam, sunt harum! Voluptatibus nisi iure assumenda reiciendis consequatur voluptates quisquam cumque
+        magnam! Obcaecati nemo explicabo illo voluptatem minima itaque voluptatum excepturi optio ut laudantium suscipit,
+        ea molestiae inventore. Quidem saepe molestiae neque enim vitae, velit quaerat nam tempora eius. Earum possimus id
+        perferendis hic temporibus. Debitis nihil quibusdam ipsam accusamus recusandae sequi perspiciatis deserunt quod
+        veniam expedita velit atque corrupti est unde repellendus id sit ab mollitia, inventore asperiores fugit possimus.
+        Sequi quod enim expedita aspernatur, quaerat nobis. Placeat voluptatibus quae ratione aspernatur accusantium
+        dolorum eum. Aspernatur officia dolor, veritatis natus velit nisi magni fugiat quam ipsam reprehenderit, sed fuga
+        numquam id eum omnis obcaecati doloribus suscipit porro et rerum assumenda cupiditate dolorem placeat laudantium?
+        Libero, dolore. Provident quasi perferendis sequi quae, pariatur aperiam vel ad impedit delectus odio ut optio
+        veniam, quis modi officiis sunt. Cupiditate totam, sapiente eligendi ad maiores suscipit obcaecati exercitationem
+        alias dignissimos similique quaerat, ab, laboriosam quos culpa voluptates harum dolores.
+        <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, recusandae maiores. Beatae voluptate natus debitis
+        distinctio quas nam ipsam pariatur soluta, cumque, corrupti vel tempore maiores ipsa quisquam, vitae corporis
+        minus dignissimos. Aut maxime autem ab animi magnam reiciendis, aliquid nesciunt vel, quos nostrum ducimus quae
+        cum enim sit omnis asperiores vero laudantium. Repudiandae molestias adipisci fugiat at quos incidunt laborum,
+        veniam quis neque autem quam eveniet tempore? Fugit, aspernatur quod qui porro labore atque possimus quasi
+        Voluptatibus neque, tempore, consequuntur qui corporis non quidem perferendis possimus distinctio expedita omnis
+        cumque iusto animi blanditiis? Cum facere consequuntur harum itaque nemo consequatur incidunt eligendi alias sunt
+        distinctio! Autem corporis at architecto voluptatibus non ullam, hic voluptatum nihil voluptatem doloribus nostrum
+        beatae quo quibusdam praesentium, nobis maxime sit error aut amet, reprehenderit impedit aspernatur tempore
+        reiciendis. Fugiat delectus nulla soluta corporis facere nesciunt officia? Reprehenderit esse earum sit magni,
+        veniam doloribus rem eligendi obcaecati dicta, non facere consequatur ut pariatur modi qui placeat maxime quidem
+        sequi rerum ex, enim ea libero! Sapiente in consequuntur corrupti, debitis ipsam eius, iusto magni quo rerum rem
+        ipsa quaerat asperiores enim quidem voluptas odit modi non, eos minima incidunt impedit sunt quae. Quasi modi ab,
+        nulla ullam, facilis odio voluptatum totam quo eum minima repellat labore.
+      </p>
+    </div>
+  </div>
+
+<!-- Bootstrap script code -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
+  <script src="js/index.js"></script>
+</body>
+
+</html>
