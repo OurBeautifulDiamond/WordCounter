@@ -1,5 +1,5 @@
 .header {
-    background-color: #712cf9;
+    background-color: #7e2ee7;
     box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%), inset 0 -1px 0 rgb(0 0 0 / 15%);
 }
 .nav {
@@ -17,7 +17,7 @@
 .nav-link {
     color: rgba(255,255,255,0.85);
     padding: 8px;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 /* section-1 */
@@ -31,6 +31,7 @@
     min-height: 450px;
     resize: none;
     padding: 10px 10px 10px 10px;
+	border-radius: 10px;
 }
 @media (max-width:576px) {
     .text-input {
@@ -43,7 +44,7 @@
     }
 }
 textarea {
-    outline-color: rgb(113, 44, 249);
+    outline-color: #7e2ee7;
 }
 
 /* section-2 */
@@ -55,8 +56,11 @@ textarea {
     margin-bottom: 0px;
     color: #444444;
     }
-#word-count {
+.word-count {
     color: #702cf9;
+}
+.word-count-exclude-space {
+    color: #8d9eff;
 }
 .text-bg-primary {
     background-color: RGBA(141, 114, 225,var(--bs-bg-opacity,1))!important;
@@ -65,10 +69,11 @@ textarea {
     background-color: RGBA(141, 158, 255,var(--bs-bg-opacity,1))!important;
 }
 
-/* .section-3 {
-    background-color: #f8f9fa;
-} */
+.section-3 {
+    background-color: #844ff0d7;
+    padding: 16px;
+}
 
 .section-4 {
-    background-color: #f8f9fa;
+    background: linear-gradient(#702cf9, #8456e0);
 }
