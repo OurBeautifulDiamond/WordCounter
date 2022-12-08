@@ -1,29 +1,23 @@
 .header {
     background-color: #712cf9;
-    color: white;
-    height: 50px;
     box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%), inset 0 -1px 0 rgb(0 0 0 / 15%);
 }
-.navbar {
-    --bs-nav-link-color: rgb(168, 138, 255);
-    --bs-nav-link-hover-color: rgb(168, 138, 255);
+.nav {
+    /* --bs-nav-link-color: rgb(168, 138, 255); */
+    --bs-nav-link-hover-color: white;
 }
 #navBarLayout {
-    height: 50px;
-    /* text-align: center;
-    line-height: auto; */
-    /* padding: 12px 0; */
-}
-.navbar-brand {
-    color: #ffffffd9;
+    text-align: center;
+    line-height: auto;
+    padding: 12px 0;
 }
 .nav-tabs {
     border-bottom: 0;
 }
 .nav-link {
-    color: white;
-    padding-top: 0;
-    padding-bottom: 0;
+    color: rgba(255,255,255,0.85);
+    padding: 8px;
+    font-size: 16px;
 }
 
 /* section-1 */
