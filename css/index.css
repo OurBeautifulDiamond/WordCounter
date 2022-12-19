@@ -157,3 +157,18 @@ h3 {
     text-align: center;
     font-size: 18px;
 }
+
+/* section-7 */
+.section-7 {
+    background-color: #fcfaff;
+    padding: 40px;
+}
+.section-7 h3 {
+    color: #5a26c3;
+    margin-bottom: 16px;
+}
+.section-7 p {
+    color: #444444;
+    text-align: left;
+    font-size: 18px;
+}
