@@ -160,7 +160,7 @@ h3 {
 
 /* section-7 */
 .section-7 {
-    background-color: #fcfaff;
+    background-color: #fafafa;
     padding: 40px;
 }
 .section-7 h3 {
@@ -171,4 +171,7 @@ h3 {
     color: #444444;
     text-align: center;
     font-size: 18px;
+}
+.round-box {
+    border-radius: 12px;
 }
