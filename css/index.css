@@ -27,10 +27,13 @@
     background-color: #fcfaff;
 }
 h1 {
-    color: #7745db;
+    /* color: #7745db;
+    background-color: #fcfaff; */
     padding: 23px 0 15px 23px;
-    background-color: #fcfaff;
     font-size: 48px;
+    background: -webkit-linear-gradient(45deg, #8d00ff, #96ffff 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 #text-box {
     /* padding-top: 50px; */
@@ -97,7 +100,9 @@ h3 {
     text-align: center;
 }
 .section-3 h3 {
-    color: #5a26c3;
+    background: -webkit-linear-gradient(45deg, #661aff, #8d9eff 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin-bottom: 16px;
 }
 .section-3 p {
@@ -129,7 +134,9 @@ h3 {
     padding: 40px;
 }
 .section-5 h3 {
-    color: #5a26c3;
+    background: -webkit-linear-gradient(45deg, #661aff, #8d9eff 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin-bottom: 16px;
 }
 .section-5 p {
@@ -150,7 +157,9 @@ h3 {
     
 }
 .section-6 h3 {
-    color: #844ff0;
+    background: -webkit-linear-gradient(45deg, #8d3bde, #7ba8ff 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin-bottom: 16px;
 }
 .section-6 p {
@@ -166,7 +175,9 @@ h3 {
     padding: 40px;
 }
 .section-7 h3 {
-    color: #5a26c3;
+    background: -webkit-linear-gradient(45deg, #661aff, #8d9eff 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin-bottom: 16px;
 }
 .section-7 p {
