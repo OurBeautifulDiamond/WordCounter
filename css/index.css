@@ -100,7 +100,7 @@ h3 {
     text-align: center;
 }
 .section-3 h3 {
-    background: -webkit-linear-gradient(90deg, #661aff, #8d9eff 80%);
+    background: -webkit-linear-gradient(270deg, #661aff, #8d9eff 80%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 16px;
@@ -134,7 +134,7 @@ h3 {
     padding: 40px;
 }
 .section-5 h3 {
-    background: -webkit-linear-gradient(90deg, #661aff, #8d9eff 80%);
+    background: -webkit-linear-gradient(270deg, #661aff, #8d9eff 80%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 16px;
