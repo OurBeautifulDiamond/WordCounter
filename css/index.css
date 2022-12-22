@@ -88,6 +88,9 @@ textarea {
 #dot-emphasize {
     color: #8d9eff;
 }
+#dot-emphasize-white {
+    color: #fcfaff;
+}
 
 /* section-3 */
 .inner-message {
