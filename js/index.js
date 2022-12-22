@@ -16,5 +16,4 @@ textInput.addEventListener('input', () => {
   wordCountExcludeSpaceElement.textContent = wordCountExcludeSpace;
   letterCountElement.textContent = letterCount;
   spaceCountElement.textContent = spaceCount;
-
 });
