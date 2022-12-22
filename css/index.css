@@ -1,6 +1,9 @@
 * {
     word-break: keep-all;
 }
+h3 {
+    font-size: 32px;
+}
 .header {
     background-color: #7745db;
     box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%), inset 0 -1px 0 rgb(0 0 0 / 15%);
@@ -27,8 +30,6 @@
     background-color: #fcfaff;
 }
 h1 {
-    /* color: #7745db;
-    background-color: #fcfaff; */
     padding: 23px 0 15px 23px;
     font-size: 48px;
     background: -webkit-linear-gradient(270deg, #7f00ff, #9db7ff 80%);
@@ -36,7 +37,6 @@ h1 {
     -webkit-text-fill-color: transparent;
 }
 #text-box {
-    /* padding-top: 50px; */
     padding-left: 0;
     padding-right: 0;
 }
@@ -92,9 +92,6 @@ textarea {
 /* section-3 */
 .inner-message {
     margin: auto 0;
-}
-h3 {
-    font-size: 32px;
 }
 .inner-message h3 {
     text-align: center;
@@ -170,15 +167,16 @@ h3 {
 
 /* section-7 */
 .section-7 {
-    /* background-color: rgba(239, 233, 250, 0.65); */
     background-color: #fcfaff;
     padding: 40px;
 }
-.section-7 h3 {
+.section-7 h4 {
     background: -webkit-linear-gradient(45deg, #661aff, #8d9eff 80%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 16px;
+    text-align: center;
+    font-size: 32px;
 }
 .section-7 p {
     color: #444444;
