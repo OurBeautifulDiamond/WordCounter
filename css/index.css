@@ -153,8 +153,8 @@ textarea {
 /* section-6 */
 .section-6 {
     background-color: #f1ebfc;
-    padding: 80px 40px 40px 40px;
-    
+    padding: 80px 40px 40px 63px;
+    padding-bottom: 63px;
 }
 .section-6 h3 {
     background: -webkit-linear-gradient(45deg, #8d3bde, #7ba8ff 80%);
@@ -197,4 +197,27 @@ textarea {
     text-align: center;
     margin-bottom: 20px;
     color: #8d9eff;
+}
+
+/* footer */
+.footer-background {
+    background-color: #f1ebfc;
+    margin: auto 0;
+    text-align: center;
+}
+.footer-background a {
+    color: #7744db;
+    text-decoration: none;
+}
+.footer-box {
+    padding-top: 40px;
+    padding-bottom: 32px;
+}
+.footer-message {
+    font-size: 16px;
+    color: #3d3d3d;
+}
+.svg {
+    width: 20px;
+    margin-right: 10px;
 }
